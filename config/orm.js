@@ -59,4 +59,5 @@ var orm = {
 //     console.log(res);
 // });
 
+module.exports = orm;
 
