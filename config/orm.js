@@ -55,7 +55,7 @@ var orm = {
 //     console.log(res);
 // });
 
-// orm.updateOne("burgers", [{ burger_name: "Double Cheeseburger" }, { devoured: true }], "id=1", function (res) {
+// orm.updateOne("burgers", [{ burger_name: "Double Cheeseburger" }, { devoured: false }], "id=1", function (res) {
 //     console.log(res);
 // });
 
