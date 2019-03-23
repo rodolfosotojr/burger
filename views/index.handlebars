@@ -1,5 +1,13 @@
 <h1>Eat Da Burger</h1>
 
+<h2>Add a New Burger</h2>
+
+<div class="brgrBtn" id="newBrgr">
+  <label for="brgr">Burger Name</label>
+  <input type="text" id="brgr" name="burger">
+  <button type="submit" id="brgrSbmt">Add Burger</button>
+</div>
+
 <h2>Choose a burger then devour it!</h2>
 
 <h3>Burgers Eaten</h3>
@@ -14,10 +22,11 @@
 </ul>
 
 <h3>Burgers To Eat</h3>
+
 <ul>
   {{#each burger}}
   {{#unless devoured}}
-  <li>{{burger_name}}</li>
+  <li id="toEat">{{burger_name}}</li>
   <li>Devoured? {{devoured}}</li>
   {{/unless}}
   {{/each}}
