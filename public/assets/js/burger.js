@@ -1,17 +1,17 @@
 $(document).ready(function () {
 
-    var boolean = function () {
-        if (this.devoured) {
-            var str = this.devoured;
-            var english = str.replace(1, "True");
-            
-        } else {
-            var falseEnglish = this.devoured.raplace(0, "False");
-            return falseEnglish;
-        }
-    };
+    // var boolean = function () {
+    //     if (this.devoured) {
+    //         var str = this.devoured;
+    //         var english = str.replace(1, "True");
 
-    boolean();
+    //     } else {
+    //         var falseEnglish = this.devoured.raplace(0, "False");
+    //         return falseEnglish;
+    //     }
+    // };
+
+    // boolean();
 
     $("#brgrSbmt").on("click", function (e) {
         e.preventDefault();
@@ -28,6 +28,13 @@ $(document).ready(function () {
             console.log("new burger created", newBrgr);
             location.reload();
         });
+    });
+
+    $("#toEat").on("click", function (e) {
+        e.preventDefault();
+        console.log("I've been clicked")
+
+        devoured = true;
     });
 
     console.log("document ready!!!");
