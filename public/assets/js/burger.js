@@ -30,11 +30,12 @@ $(document).ready(function () {
         });
     });
 
-    $("#toEat").on("click", function (e) {
+    $(".toEat").on("click", function (e) {
         e.preventDefault();
-        console.log("I've been clicked")
-
-        devoured = true;
+        // console.log("I've been clicked");
+        var attribute = $(".toEat").attr("data-boolean");
+        console.log("I'm id:" + attribute);
+        // devoured = true;
     });
 
     console.log("document ready!!!");
